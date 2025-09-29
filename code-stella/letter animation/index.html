@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Span Text Animation</title>
+  <style>
+    body {
+      background: #282c34;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrapper {
+      text-align: center;
+    }
+    .animated-span {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 8px;
+      animation: colorSpacing 2s infinite alternate;
+      text-shadow: 0 2px 8px #1a1c23;
+    }
+    @keyframes colorSpacing {
+      0% {
+        color: #fff;
+        letter-spacing: 2px;
+        opacity: 0.7;
+      }
+      50% {
+        color: #ffdd57;
+        letter-spacing: 22px;
+        opacity: 1;
+      }
+      100% {
+        color: #fff;
+        letter-spacing: 8px;
+        opacity: 0.7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <span class="animated-span">A</span>
+    <span class="animated-span">n</span>
+    <span class="animated-span">i</span>
+    <span class="animated-span">m</span>
+    <span class="animated-span">a</span>
+    <span class="animated-span">t</span>
+    <span class="animated-span">e</span>
+    <span class="animated-span">d</span>
+    <span class="animated-span">&nbsp;</span>
+    <span class="animated-span">T</span>
+    <span class="animated-span">e</span>
+    <span class="animated-span">x</span>
+    <span class="animated-span">t</span>
+  </div>
+</body>
+</html>
